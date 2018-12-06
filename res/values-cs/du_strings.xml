@@ -22,7 +22,7 @@
     <string name="pick_up_summary">Pulzování upozornění, když je zařízení zvednuto</string>
 
     <!-- Proximity sensor -->
-    <string name="priximity_sensor_title">Senzor přiblížení</string>
+    <string name="proximity_sensor_title">Senzor přiblížení</string>
     <string name="hand_wave_gesture_title">Mávnutí ruky</string>
     <string name="hand_wave_gesture_summary">Pulzování upozornění při mávnutí rukou</string>
     <string name="pocket_gesture_title">Kapsa</string>

@@ -22,7 +22,7 @@
     <string name="pick_up_summary">Afficher les notifications lors de la saisie du téléphone</string>
 
     <!-- Proximity sensor -->
-    <string name="priximity_sensor_title">Capteur de proximité</string>
+    <string name="proximity_sensor_title">Capteur de proximité</string>
     <string name="hand_wave_gesture_title">Geste de la main</string>
     <string name="hand_wave_gesture_summary">Afficher les notifications lors du passage de la main devant le téléphone</string>
     <string name="pocket_gesture_title">Poche</string>
