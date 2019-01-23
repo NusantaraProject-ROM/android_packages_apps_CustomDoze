@@ -28,4 +28,7 @@
     <string name="pocket_gesture_title">Poche</string>
     <string name="pocket_gesture_summary">Afficher les notifications en sortant le téléphone de la poche</string>
 
+    <string name="aod_setting_title">Mode Veille permanent</string>
+    <string name="aod_setting_summary">Toujours utiliser la fonctionnalité \"affichage en mode Veille\" lorsque l\'appareil est en veille</string>
+
 </resources>
