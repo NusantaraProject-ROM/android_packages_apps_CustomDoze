@@ -31,8 +31,15 @@
         <activity
             android:name=".DozeSettings"
             android:label="@string/ambient_display_title"
-            android:theme="@android:style/Theme.DeviceDefault.Settings">
+            android:theme="@style/AppTheme">
         </activity>
+
+        <activity
+            android:name="com.custom.ambient.display.DozeBrightness"
+            android:label="@string/ambient_display_title"
+            android:theme="@style/AppTheme"
+            android:autoRemoveFromRecents="true"
+            android:parentActivityName="com.custom.ambient.display.DozeSettings" />
 
     </application>
 </manifest>
