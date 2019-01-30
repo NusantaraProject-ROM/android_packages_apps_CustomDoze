@@ -20,6 +20,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.Preference;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v14.preference.PreferenceFragment;
@@ -57,8 +58,14 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
     public static class MainSettingsFragment extends PreferenceFragment
             implements Preference.OnPreferenceChangeListener {
 
+        private static final String KEY_CATEGORY_TILT_SENSOR = "tilt_sensor";
+        private static final String KEY_CATEGORY_PROXIMITY_SENSOR = "proximity_sensor";
+
         private Context mContext;
         private ActionBar actionBar;
+
+        private PreferenceCategory mTiltCategory;
+        private PreferenceCategory mProximitySensorCategory;
         private SwitchPreference mAoDPreference;
         private SwitchPreference mAmbientDisplayPreference;
         private SwitchPreference mPickUpPreference;
@@ -111,6 +118,20 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
                     && !mContext.getResources().getBoolean(
                             R.bool.hasDozeBrightnessSensor)) {
                 getPreferenceScreen().removePreference(mBrightnessLevels);
+            }
+
+            mTiltCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_TILT_SENSOR);
+            if (!getResources().getBoolean(R.bool.has_tilt_sensor)) {
+                getPreferenceScreen().removePreference(mTiltCategory);
+                getPreferenceScreen().removePreference(mPickUpPreference);
+            }
+
+            mProximitySensorCategory =
+                (PreferenceCategory) findPreference(KEY_CATEGORY_PROXIMITY_SENSOR);
+            if (!getResources().getBoolean(R.bool.has_proximity_sensor)) {
+                getPreferenceScreen().removePreference(mProximitySensorCategory);
+                getPreferenceScreen().removePreference(mHandwavePreference);
+                getPreferenceScreen().removePreference(mPocketPreference);
             }
 
             if (mAoDPreference == null) return;
