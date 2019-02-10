@@ -27,6 +27,8 @@ import android.support.v14.preference.PreferenceFragment;
 import android.preference.PreferenceActivity;
 import android.view.MenuItem;
 
+import com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference;
+
 public class DozeSettings extends PreferenceActivity implements PreferenceFragment.OnPreferenceStartFragmentCallback {
 
     @Override
@@ -71,6 +73,7 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
         private SwitchPreference mPickUpPreference;
         private SwitchPreference mHandwavePreference;
         private SwitchPreference mPocketPreference;
+        private SystemSettingSwitchPreference mDozeOnChargePreference;
         private Preference mBrightnessLevels;
 
         @Override
@@ -86,11 +89,16 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
 
             mAoDPreference =
                 (SwitchPreference) findPreference(Utils.AOD_KEY);
+
+            mDozeOnChargePreference =
+                (SystemSettingSwitchPreference) findPreference(Utils.AOD_CHARGE_KEY);
+
             if (Utils.isAoDAvailable(mContext)) {
                 mAoDPreference.setChecked(Utils.isAoDEnabled(mContext));
                 mAoDPreference.setOnPreferenceChangeListener(this);
             } else {
                 getPreferenceScreen().removePreference(mAoDPreference);
+                getPreferenceScreen().removePreference(mDozeOnChargePreference);
             }
 
             mAmbientDisplayPreference =
@@ -174,6 +182,7 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
             mPickUpPreference.setEnabled(!aodEnabled);
             mHandwavePreference.setEnabled(!aodEnabled);
             mPocketPreference.setEnabled(!aodEnabled);
+            mDozeOnChargePreference.setEnabled(!aodEnabled);
         }
 
         @Override
