@@ -35,6 +35,7 @@ public final class Utils {
     private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
 
     protected static final String AOD_KEY = "always_on_ambient";
+    protected static final String AOD_CHARGE_KEY = "doze_on_charge";
     protected static final String AMBIENT_DISPLAY_KEY = "ambient_display";
     protected static final String PICK_UP_KEY = "pick_up";
     protected static final String GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
