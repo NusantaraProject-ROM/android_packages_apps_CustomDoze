@@ -35,5 +35,5 @@
     <string name="high_brightness_value">Közepes fény fényerő</string>
     <string name="sun_brightness_value">Napsütés fényerő</string>
     <string name="reset_hidden_apps">Az összes visszaállítása</string>
-    <string name="footer_info">If Always on is enabled, brightness gets recalculated to follow hardware specifications, so don\'t consider above values as absolute ones.</string>
+    <string name="footer_info">Ha az \"Always\" on aktiválva van, a fényerő újra kiszámításra kerül a hardver specifikációk követése érdekében, ezért ne vegye figyelembe a fenti értékeket abszolút értéknek.</string>
 </resources>
