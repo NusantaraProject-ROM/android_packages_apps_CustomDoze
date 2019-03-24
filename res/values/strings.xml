@@ -31,7 +31,8 @@
     <string name="pocket_gesture_summary">Pulse notifications on removal from pocket</string>
 
     <string name="aod_setting_title">Always on</string>
-    <string name="aod_setting_summary">Show time, notification icons and other info. Increased battery usage.</string>
+    <string name="aod_setting_summary">Show time, notification icons and other info. Increased
+        battery usage.</string>
 
     <string name="doze_brightness_title">Ambient brightness</string>
     <string name="doze_brightness_summary">Configure Ambient brightness values</string>
@@ -42,5 +43,8 @@
 
     <string name="reset_hidden_apps">Reset all</string>
 
-    <string name="footer_info">If Always on is enabled, brightness gets recalculated to follow hardware specifications, so don\'t consider above values as absolute ones.</string>
+    <string name="footer_info">If Always on is enabled, brightness gets recalculated to follow
+        hardware specifications, so don\'t consider above values as absolute ones.\n\nLong press on
+        the left text value to set it manually.</string>
+
 </resources>
