@@ -17,6 +17,8 @@
 
     <string name="doze_elements_title">What to show</string>
 
+    <string name="doze_trigger_title">When to show</string>
+
     <string name="ambient_display_notifications">New notifications</string>
     <string name="ambient_display_summary">Wake screen when you receive notifications</string>
 
@@ -47,4 +49,9 @@
     <string name="brightness_title">Brightness</string>
     <string name="ambient_pulse_brightness_title">Ambient display</string>
     <string name="ambient_doze_brightness_title">Always on display</string>
+
+    <string name="double_tap_title">Double tap</string>
+    <string name="doze_double_tap_title">Double tap to check phone</string>
+    <string name="doze_double_tap_summary">Pulse notifications by a double tap</string>
+
 </resources>
