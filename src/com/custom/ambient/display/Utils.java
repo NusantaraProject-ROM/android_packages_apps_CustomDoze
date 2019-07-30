@@ -20,6 +20,8 @@ import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.content.Context;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.UserHandle;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
@@ -163,5 +165,14 @@ public final class Utils {
     protected static boolean sensorsEnabled(Context context) {
         return tiltGestureEnabled(context) || handwaveGestureEnabled(context)
                 || pocketGestureEnabled(context);
+    }
+
+    protected static Sensor getSensor(SensorManager sm, String type) {
+        for (Sensor sensor : sm.getSensorList(Sensor.TYPE_ALL)) {
+            if (type.equals(sensor.getStringType())) {
+                return sensor;
+            }
+        }
+        return null;
     }
 }
