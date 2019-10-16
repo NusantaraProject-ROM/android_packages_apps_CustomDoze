@@ -22,10 +22,10 @@ import android.content.Context;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.provider.Settings;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.Preference;
-import android.support.v14.preference.SwitchPreference;
-import android.support.v14.preference.PreferenceFragment;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.Preference;
+import androidx.preference.SwitchPreference;
+import androidx.preference.PreferenceFragment;
 import android.view.MenuItem;
 
 import com.havoc.support.preferences.SystemSettingSwitchPreference;
