@@ -22,12 +22,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
+import android.hardware.display.AmbientDisplayConfiguration;
 import android.os.UserHandle;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.util.Log;
-
-import com.android.internal.hardware.AmbientDisplayConfiguration;
 
 public final class Utils {
 
