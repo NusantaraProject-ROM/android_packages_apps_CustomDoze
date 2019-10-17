@@ -16,6 +16,7 @@
     <string name="ambient_display_title">Ambient Display</string>
 
     <string name="doze_trigger_title">When to show</string>
+    <string name="doze_elements_title">What to show</string>
 
     <string name="ambient_display_notifications">New notifications</string>
     <string name="ambient_display_summary">Wake screen when you receive notifications</string>
@@ -53,4 +54,8 @@
     <string name="double_tap_title">Double tap</string>
     <string name="doze_double_tap_title">Double tap to check phone</string>
     <string name="doze_double_tap_summary">Pulse notifications by a double tap</string>
+
+     <!-- Ambient display battery percentage -->
+    <string name="ambient_battery_percent_title">Battery level</string> 
+    <string name="ambient_battery_percent_summary">Show battery percent on the bottom while dozing</string>
 </resources>
