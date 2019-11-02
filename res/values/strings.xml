@@ -58,4 +58,7 @@
      <!-- Ambient display battery percentage -->
     <string name="ambient_battery_percent_title">Battery level</string> 
     <string name="ambient_battery_percent_summary">Show battery percent on the bottom while dozing</string>
+
+    <string name="pulse_on_new_tracks_title">Music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Show Ambient Display when a new music track is played</string>
 </resources>
