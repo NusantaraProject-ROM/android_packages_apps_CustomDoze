@@ -59,4 +59,7 @@
     <string name="always_on_display_schedule_custom">Turns on at custom time</string>
     <string name="always_on_display_start_time_title">Start time</string>
     <string name="always_on_display_end_time_title">End time</string>
+
+    <string name="pulse_on_new_tracks_title">Music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Show Ambient Display when a new music track is played</string>
 </resources>
