@@ -52,6 +52,13 @@
             android:title="@string/ambient_display_notifications"
             android:summary="@string/ambient_display_summary" />
 
+
+        <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+            android:key="pulse_on_new_tracks"
+            android:defaultValue="true"
+            android:title="@string/pulse_on_new_tracks_title"
+            android:summary="@string/pulse_on_new_tracks_summary" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

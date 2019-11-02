@@ -36,6 +36,10 @@
     <string name="ambient_display_notifications">New notifications</string>
     <string name="ambient_display_summary">Wake screen when you receive notifications</string>
 
+    <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">Music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Wake screen when a new music track is played</string>
+
     <!-- Tilt sensor -->
     <string name="pick_up_title">Pick up</string>
     <string name="pick_up_summary">Pick up your phone to check time, notification icons and other info</string>
