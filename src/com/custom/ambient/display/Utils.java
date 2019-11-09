@@ -94,16 +94,6 @@ public final class Utils {
                 Settings.Secure.DOZE_ENABLED, 1) != 0;
     }
 
-    protected static boolean isTapToWakeEnabled(Context context) {
-        return Settings.Secure.getInt(context.getContentResolver(),
-                Settings.Secure.DOUBLE_TAP_TO_WAKE, 0) != 0;
-    }
-
-    protected static boolean isTapToWakeAvailable(Context context) {
-        return context.getResources().getBoolean(
-            com.android.internal.R.bool.config_supportDoubleTapWake);
-    }
-
     protected static boolean tiltGestureEnabled(Context context) {
         return Settings.System.getInt(context.getContentResolver(),
                 Settings.System.CUSTOM_AMBIENT_TILT_GESTURE, 0) != 0;
