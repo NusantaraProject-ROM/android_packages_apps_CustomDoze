@@ -81,6 +81,7 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
         private SystemSettingSeekBarPreference mDozeBrightness;
         private SystemSettingSeekBarPreference mPulseBrightness;
         private SystemSettingSwitchPreference mDoubleTapPreference;
+        private SystemSettingSwitchPreference mMusicTickerPreference;
 
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -103,6 +104,8 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
                 (PreferenceCategory) findPreference(KEY_CATEGORY_DOUBLE_TAP);
             mDoubleTapPreference =
                 (SystemSettingSwitchPreference) findPreference(Utils.DOUBLE_TAP_KEY);
+            mMusicTickerPreference =
+                (SystemSettingSwitchPreference) findPreference(Utils.MUSIC_TICKER_KEY);
 
             if (Utils.isTapToWakeAvailable(mContext)) {
                 mDoubleTapPreference.setOnPreferenceChangeListener(this);
@@ -235,6 +238,7 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
             mDozeBrightness.setEnabled(aodEnabled);
             mPulseBrightness.setEnabled(!aodEnabled);
             mDoubleTapPreference.setEnabled(!aodEnabled);
+            mMusicTickerPreference.setEnabled(!aodEnabled);
         }
 
         @Override
