@@ -16,42 +16,41 @@
     <string name="ambient_display_title">Ambient Display</string>
 
     <string name="doze_elements_title">What to show</string>
-
     <string name="doze_trigger_title">When to show</string>
+    <string name="gestures_title">Gestures</string>
+    <string name="brightness_title">Brightness</string>
 
+    <!-- Battery percentage -->
+    <string name="ambient_battery_percent_title">Battery level</string> 
+    <string name="ambient_battery_percent_summary">Show battery percent on the bottom of the screen</string>
+
+    <!-- Always on display -->
+    <string name="aod_setting_title">Always on</string>
+    <string name="aod_setting_summary">Show time, notification icons and other info</string>
+
+    <!-- Always on while charging -->
+    <string name="doze_on_charge_title">Always on (While charging)</string>
+    <string name="doze_on_charge_summary">Always show ambient display while the device is charging</string>
+
+    <!-- Ambient display -->
     <string name="ambient_display_notifications">New notifications</string>
     <string name="ambient_display_summary">Wake screen when you receive notifications</string>
 
     <!-- Tilt sensor -->
-    <string name="tilt_sensor_title">Tilt sensor</string>
-    <string name="pick_up_title">Lift to check phone</string>
-    <string name="pick_up_summary">Pulse notifications when device is picked up</string>
+    <string name="pick_up_title">Pick up</string>
+    <string name="pick_up_summary">Pick up your phone to check time, notification icons and other info</string>
 
     <!-- Proximity sensor -->
-    <string name="proximity_sensor_title">Proximity sensor</string>
     <string name="hand_wave_gesture_title">Hand wave</string>
-    <string name="hand_wave_gesture_summary">Pulse notifications on hand wave</string>
+    <string name="hand_wave_gesture_summary">Wave hand above your phone to check time, notification icons and other info</string>
     <string name="pocket_gesture_title">Pocket</string>
-    <string name="pocket_gesture_summary">Pulse notifications on removal from pocket</string>
+    <string name="pocket_gesture_summary">Take out your phone from pocket to check time, notification icons and other info</string>
 
-    <string name="aod_setting_title">Always on</string>
-    <string name="aod_setting_summary">Show time, notification icons and other info. Increased
-        battery usage.</string>
-
-    <!-- Doze on charge -->
-    <string name="doze_on_charge_title">Always on when charging</string>
-    <string name="doze_on_charge_summary">Show doze screen all the time when charging</string>
-
-     <!-- Ambient display battery percentage -->
-    <string name="ambient_battery_percent_title">Battery level on bottom</string> 
-    <string name="ambient_battery_percent_summary">Enable to show battery percent while dozing</string>
-
-    <string name="brightness_title">Brightness</string>
+    <!-- Brightness -->
     <string name="ambient_pulse_brightness_title">Ambient display</string>
     <string name="ambient_doze_brightness_title">Always on display</string>
 
-    <string name="double_tap_title">Double tap</string>
-    <string name="doze_double_tap_title">Double tap to check phone</string>
-    <string name="doze_double_tap_summary">Pulse notifications by a double tap</string>
-
+    <!-- Double tap -->
+    <string name="doze_double_tap_title">Double tap</string>
+    <string name="doze_double_tap_summary">Double tap your phone to check time, notification icons and other info</string>
 </resources>
