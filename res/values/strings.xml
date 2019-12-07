@@ -43,4 +43,8 @@
      <!-- Ambient display battery percentage -->
     <string name="ambient_battery_percent_title">Battery level on bottom</string> 
     <string name="ambient_battery_percent_summary">Enable to show battery percent while dozing</string>
+
+    <string name="brightness_title">Brightness</string>
+    <string name="ambient_pulse_brightness_title">Ambient display</string>
+    <string name="ambient_doze_brightness_title">Always on display</string>
 </resources>
