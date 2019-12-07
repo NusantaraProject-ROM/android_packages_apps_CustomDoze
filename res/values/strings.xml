@@ -50,4 +50,8 @@
 
     <string name="pulse_on_new_tracks_title">Music ticker</string>
     <string name="pulse_on_new_tracks_summary">Show Ambient Display when a new music track is played</string>
+
+    <string name="brightness_title">Brightness</string>
+    <string name="ambient_pulse_brightness_title">Ambient display</string>
+    <string name="ambient_doze_brightness_title">Always on display</string>
 </resources>
