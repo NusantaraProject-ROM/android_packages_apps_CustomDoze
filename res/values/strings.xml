@@ -36,17 +36,6 @@
     <string name="aod_setting_title">Always on</string>
     <string name="aod_setting_summary">Show time, notification icons and other info. Increased battery usage.</string>
 
-    <string name="doze_brightness_title">Ambient brightness</string>
-    <string name="doze_brightness_summary">Configure Ambient brightness values</string>
-    <string name="night_brightness_value">Night brightness</string>
-    <string name="low_brightness_value">Low light brightness</string>
-    <string name="high_brightness_value">Medium light brightness</string>
-    <string name="sun_brightness_value">Sun light brightness</string>
-
-    <string name="reset_hidden_apps">Reset all</string>
-
-    <string name="footer_info">If Always on is enabled, brightness gets recalculated to follow hardware specifications, so don\'t consider above values as absolute ones.</string>
-
     <!-- Doze on charge -->
     <string name="doze_on_charge_title">Always on when charging</string>
     <string name="doze_on_charge_summary">Show doze screen all the time when charging</string>
