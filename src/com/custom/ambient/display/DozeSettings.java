@@ -22,7 +22,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.provider.Settings;
-import androidx.preference.PreferenceCategory;
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreference;
 import androidx.preference.PreferenceFragment;
@@ -62,14 +61,9 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
     public static class MainSettingsFragment extends PreferenceFragment
             implements Preference.OnPreferenceChangeListener {
 
-        private static final String KEY_CATEGORY_TILT_SENSOR = "tilt_sensor";
-        private static final String KEY_CATEGORY_PROXIMITY_SENSOR = "proximity_sensor";
-
         private Context mContext;
         private ActionBar actionBar;
 
-        private PreferenceCategory mTiltCategory;
-        private PreferenceCategory mProximitySensorCategory;
         private SwitchPreference mAoDPreference;
         private SwitchPreference mAmbientDisplayPreference;
         private SwitchPreference mPickUpPreference;
@@ -152,16 +146,11 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
             mDozeBrightness.setValue(value);
             mDozeBrightness.setOnPreferenceChangeListener(this);
 
-            mTiltCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_TILT_SENSOR);
             if (!getResources().getBoolean(R.bool.has_tilt_sensor)) {
-                getPreferenceScreen().removePreference(mTiltCategory);
                 getPreferenceScreen().removePreference(mPickUpPreference);
             }
 
-            mProximitySensorCategory =
-                (PreferenceCategory) findPreference(KEY_CATEGORY_PROXIMITY_SENSOR);
             if (!getResources().getBoolean(R.bool.has_proximity_sensor)) {
-                getPreferenceScreen().removePreference(mProximitySensorCategory);
                 getPreferenceScreen().removePreference(mHandwavePreference);
                 getPreferenceScreen().removePreference(mPocketPreference);
             }

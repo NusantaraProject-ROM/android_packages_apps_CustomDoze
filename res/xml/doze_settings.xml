@@ -59,30 +59,20 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="double_tap"
-        android:title="@string/double_tap_title" >
+        android:key="gestures"
+        android:title="@string/gestures_title" >
 
         <com.havoc.support.preferences.SystemSettingSwitchPreference
             android:key="doze_trigger_doubletap"
             android:defaultValue="false"
             android:title="@string/doze_double_tap_title"
             android:summary="@string/doze_double_tap_summary" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="tilt_sensor"
-        android:title="@string/tilt_sensor_title" >
 
         <SwitchPreference
             android:key="pick_up"
             android:defaultValue="false"
             android:title="@string/pick_up_title"
             android:summary="@string/pick_up_summary" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="proximity_sensor"
-        android:title="@string/proximity_sensor_title" >
 
         <SwitchPreference
             android:key="gesture_hand_wave"
