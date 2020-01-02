@@ -189,6 +189,13 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
                 mPocketPreference.setChecked(value);
                 Utils.enablePocketMode(value, mContext);
                 return true;
+            } else if (Utils.DOUBLE_TAP_KEY.equals(key)) {
+                if (Utils.isTapToWakeAvailable(mContext) &&
+                        !Utils.isTapToWakeEnabled(mContext)); {
+                    Settings.Secure.putInt(mContext.getContentResolver(),
+                            Settings.Secure.DOUBLE_TAP_TO_WAKE, 1);
+                }
+                return true;
             } else if (preference == mPulseBrightness) {
                 int value = (Integer) newValue;
                 Settings.System.putInt(mContext.getContentResolver(),
