@@ -43,6 +43,8 @@
     <!-- Tilt sensor -->
     <string name="pick_up_title">Pick up</string>
     <string name="pick_up_summary">Pick up your phone to check time, notification icons and other info</string>
+    <string name="wake_gesture_title">Raise to wake</string>
+    <string name="wake_gesture_summary">Pick up your phone to wake up the device instead of pulsing notifications</string>
 
     <!-- Proximity sensor -->
     <string name="hand_wave_gesture_title">Hand wave</string>
