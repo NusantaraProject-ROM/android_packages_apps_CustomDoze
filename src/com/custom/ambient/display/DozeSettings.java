@@ -22,11 +22,12 @@ import android.content.Context;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.provider.Settings;
-import androidx.preference.Preference;
-import androidx.preference.SwitchPreference;
-import androidx.preference.PreferenceFragment;
 import android.view.MenuItem;
 
+import androidx.preference.Preference;
+import androidx.preference.PreferenceFragment;
+
+import com.havoc.support.preferences.SwitchPreference;
 import com.havoc.support.preferences.SystemSettingSeekBarPreference;
 import com.havoc.support.preferences.SystemSettingSwitchPreference;
 
