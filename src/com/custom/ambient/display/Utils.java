@@ -84,6 +84,7 @@ public final class Utils {
         boolean enabled = Settings.Secure.putInt(context.getContentResolver(),
                 Settings.Secure.DOZE_ALWAYS_ON, enable ? 1 : 0);
         if (enable) {
+            enableDoubleTap(false, context);
             enablePickUp(false, context);
             enableHandWave(false, context);
             enablePocketMode(false, context);
@@ -126,6 +127,12 @@ public final class Utils {
         boolean enabled = Settings.Secure.putInt(context.getContentResolver(),
                 Settings.Secure.DOZE_ENABLED, enable ? 1 : 0);
         // don't start the service, for notifications pulse we don't need the proximity sensor check here
+        return enabled;
+    }
+
+    protected static boolean enableDoubleTap(boolean enable, Context context) {
+        boolean enabled = Settings.System.putInt(context.getContentResolver(),
+                Settings.System.DOZE_TRIGGER_DOUBLETAP, enable ? 1 : 0);
         return enabled;
     }
 

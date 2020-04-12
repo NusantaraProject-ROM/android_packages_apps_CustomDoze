@@ -23,8 +23,6 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.hardware.TriggerEvent;
 import android.hardware.TriggerEventListener;
-import android.os.PowerManager;
-import android.os.PowerManager.WakeLock;
 import android.os.SystemClock;
 import android.util.Log;
 
@@ -37,13 +35,11 @@ public class TiltSensor implements SensorEventListener {
     private static final boolean DEBUG = false;
     private static final String TAG = "TiltSensor";
 
-    private static final int SENSOR_WAKELOCK_DURATION = 200;
+    private static final int BATCH_LATENCY_IN_MS = 100;
     private static final int MIN_PULSE_INTERVAL_MS = 2500;
 
-    private PowerManager mPowerManager;
     private SensorManager mSensorManager;
     private Sensor mSensor;
-    private WakeLock mSensorWakeLock;
     private Context mContext;
 
     private boolean mTiltGestureEnabled;
@@ -56,7 +52,6 @@ public class TiltSensor implements SensorEventListener {
 
     public TiltSensor(Context context) {
         mContext = context;
-        mPowerManager = (PowerManager) mContext.getSystemService(Context.POWER_SERVICE);
         mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
         if (mSensorManager != null) {
             mIsGlanceGesture = false;
@@ -74,8 +69,6 @@ public class TiltSensor implements SensorEventListener {
             }
         }
         mExecutorService = Executors.newSingleThreadExecutor();
-        mSensorWakeLock = mPowerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
-                "SensorWakeLock");
     }
 
     @Override
@@ -113,7 +106,7 @@ public class TiltSensor implements SensorEventListener {
             if (mTiltGestureEnabled) {
                 if (!mIsGlanceGesture) {
                     mSensorManager.registerListener(this, mSensor,
-                            SensorManager.SENSOR_DELAY_NORMAL);
+                            SensorManager.SENSOR_DELAY_NORMAL, BATCH_LATENCY_IN_MS * 1000);
                 } else {
                     if (!mEnabled) {
                         if (!mSensorManager.requestTriggerSensor(mGlanceListener, mSensor)) {
