@@ -102,8 +102,8 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
                 mAoDPreference.setChecked(Utils.isAoDEnabled(mContext));
                 mAoDPreference.setOnPreferenceChangeListener(this);
             } else {
-                getPreferenceScreen().removePreference(mAoDPreference);
-                getPreferenceScreen().removePreference(mDozeOnChargePreference);
+                mAoDPreference.setVisible(false);
+                mDozeOnChargePreference.setVisible(false);
             }
 
             mAmbientDisplayPreference =
@@ -147,12 +147,12 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
             mDozeBrightness.setOnPreferenceChangeListener(this);
 
             if (!getResources().getBoolean(R.bool.has_tilt_sensor)) {
-                getPreferenceScreen().removePreference(mPickUpPreference);
+                mPickUpPreference.setVisible(false);
             }
 
             if (!getResources().getBoolean(R.bool.has_proximity_sensor)) {
-                getPreferenceScreen().removePreference(mHandwavePreference);
-                getPreferenceScreen().removePreference(mPocketPreference);
+                mHandwavePreference.setVisible(false);
+                mPocketPreference.setVisible(false);
             }
 
             if (mAoDPreference == null) return;
