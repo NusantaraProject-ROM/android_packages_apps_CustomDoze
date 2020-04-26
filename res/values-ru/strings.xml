@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ambient_display_title">Активный дисплей</string>
+    <string name="doze_trigger_title">Когда показывать</string>
+    <string name="doze_elements_title">Что показывать</string>
+    <string name="gestures_title">Жесты</string>
+    <string name="brightness_title">Яркость</string>
+    <!-- Battery percentage -->
+    <string name="ambient_battery_percent_title">Уровень заряда батареи</string>
+    <string name="ambient_battery_percent_summary">Отображать процент заряда батареи снизу</string>
+    <!-- Always on display -->
+    <string name="aod_setting_title">Всегда включен</string>
+    <string name="aod_setting_summary">Показывать время, уведомления и другую информацию</string>
+    <!-- Always on while charging -->
+    <string name="doze_on_charge_title">Всегда включен во время зарядки</string>
+    <string name="doze_on_charge_summary">Всегда показывать активный экран во время зарядки устройства</string>
+    <!-- Ambient display -->
+    <string name="ambient_display_notifications">Новые уведомления</string>
+    <string name="ambient_display_summary">Включать экран, когда приходят уведомления</string>
+    <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">Текущий трек</string>
+    <string name="pulse_on_new_tracks_summary">Пробуждать экран при воспроизведении новой музыки</string>
+    <!-- Tilt sensor -->
+    <string name="pick_up_title">Поднятие</string>
+    <string name="pick_up_summary">Поднимите телефон, чтобы проверить время, значки уведомлений и другую информацию</string>
+    <!-- Proximity sensor -->
+    <string name="hand_wave_gesture_title">Взмах рукой</string>
+    <string name="hand_wave_gesture_summary">Проведите рукой над телефоном для проверки времени, значков уведомлений и другой информации</string>
+    <string name="pocket_gesture_title">В кармане</string>
+    <string name="pocket_gesture_summary">Достаньте свой телефон из кармана, чтобы проверить время, уведомления и другую информацию</string>
+    <!-- Double tap -->
+    <string name="doze_double_tap_title">Двойное касание</string>
+    <string name="doze_double_tap_summary">Дважды коснитесь телефона для проверки времени, значков уведомлений и другой информации</string>
+    <!-- Brightness -->
+    <string name="ambient_pulse_brightness_title">Активный дисплей</string>
+    <string name="ambient_doze_brightness_title">Дисплей всегда включен</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ambient_display_title">息屏显示</string>
+    <string name="doze_trigger_title">显示时机</string>
+    <string name="doze_elements_title">显示内容</string>
+    <string name="gestures_title">手势</string>
+    <string name="brightness_title">亮度</string>
+    <!-- Battery percentage -->
+    <string name="ambient_battery_percent_title">电池电量</string>
+    <string name="ambient_battery_percent_summary">在息屏界面底部显示电量百分比</string>
+    <!-- Always on display -->
+    <string name="aod_setting_title">始终显示</string>
+    <string name="aod_setting_summary">显示时间、通知图标和其他信息</string>
+    <!-- Always on while charging -->
+    <string name="doze_on_charge_title">充电时始终显示</string>
+    <string name="doze_on_charge_summary">在充电时始终展示息屏显示</string>
+    <!-- Ambient display -->
+    <string name="ambient_display_notifications">新通知</string>
+    <string name="ambient_display_summary">收到新通知唤醒屏幕</string>
+    <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">音乐主动显示</string>
+    <string name="pulse_on_new_tracks_summary">播放新歌曲时唤醒屏幕</string>
+    <!-- Tilt sensor -->
+    <string name="pick_up_title">抬手唤醒</string>
+    <string name="pick_up_summary">拿起设备即可查看时间、通知图标和其他信息</string>
+    <!-- Proximity sensor -->
+    <string name="hand_wave_gesture_title">挥手</string>
+    <string name="hand_wave_gesture_summary">在手机上方挥手即可查看时间、通知图标和其他信息</string>
+    <string name="pocket_gesture_title">口袋</string>
+    <string name="pocket_gesture_summary">从口袋中拿出手机即可查看时间、通知图标以及其他信息</string>
+    <!-- Double tap -->
+    <string name="doze_double_tap_title">双击唤醒</string>
+    <string name="doze_double_tap_summary">双击手机即可查看时间、通知图标以及其他信息</string>
+    <!-- Brightness -->
+    <string name="ambient_pulse_brightness_title">息屏显示</string>
+    <string name="ambient_doze_brightness_title">始终显示</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ambient_display_title">نمایشگر محیط</string>
+    <string name="doze_trigger_title">چه زمان نمایش داده شود</string>
+    <string name="doze_elements_title">چه چیزی را نمایش دهد</string>
+    <string name="gestures_title">حركات انگشتی</string>
+    <string name="brightness_title">روشنایی</string>
+    <!-- Battery percentage -->
+    <string name="ambient_battery_percent_title">سطح باتری</string>
+    <string name="ambient_battery_percent_summary">نمایش درصد باتری در پایین صفحه نمایش</string>
+    <!-- Always on display -->
+    <string name="aod_setting_title">همیشه روشن</string>
+    <string name="aod_setting_summary">نشان دادن زمان، آیکون اعلانات و اطلاعات دیگر</string>
+    <!-- Always on while charging -->
+    <string name="doze_on_charge_title">همیشه روشن (فقط در حالت شارژ)</string>
+    <string name="doze_on_charge_summary">نمایشگر محیط همیشه در هنگام شارژ شدن نشان داده شود</string>
+    <!-- Ambient display -->
+    <string name="ambient_display_notifications">اعلانات جدید</string>
+    <string name="ambient_display_summary">روشن شدن صفحه هنگام دریافت اعلانات</string>
+    <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">کنترل موسیقی</string>
+    <string name="pulse_on_new_tracks_summary">روش کردن صفحه نمایش وقتی که آهنگ جدید پخش می‌شود</string>
+    <!-- Tilt sensor -->
+    <string name="pick_up_title">برداشتن</string>
+    <string name="pick_up_summary">گوشی خود رو برای چک کردن زمان، آیکون های اعلان و اطلاعات دیگر بردارید</string>
+    <!-- Proximity sensor -->
+    <string name="hand_wave_gesture_title">حرکت دادن دست</string>
+    <string name="hand_wave_gesture_summary">دست خود را برای چک کردن زمان، آیکون های اعلان و اطلاعات دیگر روی صفحه تکان دهید</string>
+    <string name="pocket_gesture_title">جیب</string>
+    <string name="pocket_gesture_summary">گوشی خود را برای چک کردن زمان، آیکون های اعلان و اطلاعات دیگر از جیب خود درآوردید</string>
+    <!-- Double tap -->
+    <string name="doze_double_tap_title">دو ضربه</string>
+    <string name="doze_double_tap_summary">برای چک‌کردن زمان، آیکون های اعلان و اطلاعات دیگر به صفحه گوشی خود دو ضربه بزنید</string>
+    <!-- Brightness -->
+    <string name="ambient_pulse_brightness_title">نمایشگر محیط</string>
+    <string name="ambient_doze_brightness_title">صفحه نمایش همیشه روشن</string>
+</resources>

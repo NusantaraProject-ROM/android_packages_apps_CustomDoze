@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ambient_display_title">Ekran dostosowany do otoczenia</string>
+    <string name="doze_trigger_title">Kiedy wyświetlać</string>
+    <string name="doze_elements_title">Co pokazywać</string>
+    <string name="gestures_title">Gesty</string>
+    <string name="brightness_title">Jasność</string>
+    <!-- Battery percentage -->
+    <string name="ambient_battery_percent_title">Poziom baterii</string>
+    <string name="ambient_battery_percent_summary">Pokaż procent baterii na dole ekranu</string>
+    <!-- Always on display -->
+    <string name="aod_setting_title">Zawsze włączony</string>
+    <string name="aod_setting_summary">Pokaż godzinę, ikony powiadomień i inne informacje</string>
+    <!-- Always on while charging -->
+    <string name="doze_on_charge_title">Zawsze włączony (podczas ładowania)</string>
+    <string name="doze_on_charge_summary">Zawsze pokazuj Aktywny wyświetlacz podczas ładowania urządzenia</string>
+    <!-- Ambient display -->
+    <string name="ambient_display_notifications">Nowe powiadomienia</string>
+    <string name="ambient_display_summary">Wybudź ekran po otrzymaniu powiadomienia</string>
+    <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">Wizualizacje muzyki</string>
+    <string name="pulse_on_new_tracks_summary">Wybudź ekran, gdy odtwarzany jest nowy utwór muzyczny</string>
+    <!-- Tilt sensor -->
+    <string name="pick_up_title">Podnieś</string>
+    <string name="pick_up_summary">Podnieś telefon, aby sprawdzić godzinę, powiadomienia i inne informacje</string>
+    <!-- Proximity sensor -->
+    <string name="hand_wave_gesture_title">Machnięcie ręką</string>
+    <string name="hand_wave_gesture_summary">Pomachaj ręką nad telefonem, aby sprawdzić godzinę, powiadomienia i inne informacje</string>
+    <string name="pocket_gesture_title">Tryb kieszonkowy</string>
+    <string name="pocket_gesture_summary">Wyciągnij telefon z kieszeni, aby sprawdzić godzinę, powiadomienia i inne informacje</string>
+    <!-- Double tap -->
+    <string name="doze_double_tap_title">Dwukrotne dotknięcie</string>
+    <string name="doze_double_tap_summary">Dwukrotnie dotknij ekran, aby sprawdzić godzinę, powiadomienia i inne informacje</string>
+    <!-- Brightness -->
+    <string name="ambient_pulse_brightness_title">Ekran dostosowany do otoczenia</string>
+    <string name="ambient_doze_brightness_title">Aktywny wyświetlacz</string>
+</resources>

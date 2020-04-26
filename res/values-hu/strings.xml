@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ambient_display_title">Környezeti kijelző</string>
+    <string name="doze_trigger_title">Mikor jelenjen meg</string>
+    <string name="doze_elements_title">Mi jelenjen meg</string>
+    <string name="gestures_title">Kézmozdulatok</string>
+    <string name="brightness_title">Fényerő</string>
+    <!-- Battery percentage -->
+    <string name="ambient_battery_percent_title">Akkumulátorszint</string>
+    <string name="ambient_battery_percent_summary">Mutassa az akkumulátor százalékát a képernyő alján</string>
+    <!-- Always on display -->
+    <string name="aod_setting_title">Mindig bekapcsolva</string>
+    <string name="aod_setting_summary">Az idő, az értesítési ikonok és egyéb információk megjelenítése töltés közben</string>
+    <!-- Always on while charging -->
+    <string name="doze_on_charge_title">Állandóan bekapcsolva (Töltés közben)</string>
+    <string name="doze_on_charge_summary">A készülék töltése közben mindig jelenítse meg a környezeti kijelzőt</string>
+    <!-- Ambient display -->
+    <string name="ambient_display_notifications">Új értesítések</string>
+    <string name="ambient_display_summary">Képernyő felébresztése értesítés érkezésekor</string>
+    <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">Zene-jelzőszalag</string>
+    <string name="pulse_on_new_tracks_summary">Képernyő felébresztése új zeneszám lejátszásakor</string>
+    <!-- Tilt sensor -->
+    <string name="pick_up_title">Kézbevétel</string>
+    <string name="pick_up_summary">Vegye fel a telefont, hogy ellenőrizze az időt, az értesítési ikonokat és az egyéb információkat</string>
+    <!-- Proximity sensor -->
+    <string name="hand_wave_gesture_title">Kézzel intés</string>
+    <string name="hand_wave_gesture_summary">Húzza a kezét a telefon felett, hogy ellenőrizze az időt, az értesítési ikonokat és egyéb információkat</string>
+    <string name="pocket_gesture_title">Zseb</string>
+    <string name="pocket_gesture_summary">Vegye ki a telefont a zsebéből, hogy ellenőrizze az időt, az értesítési ikonokat és egyéb információkat</string>
+    <!-- Double tap -->
+    <string name="doze_double_tap_title">Dupla koppintás</string>
+    <string name="doze_double_tap_summary">Koppintson duplán a telefonra az idő, az értesítési ikonok és egyéb információk ellenőrzéséhez</string>
+    <!-- Brightness -->
+    <string name="ambient_pulse_brightness_title">Környezeti kijelző</string>
+    <string name="ambient_doze_brightness_title">Mindig bekapcsolva (Aod)</string>
+</resources>

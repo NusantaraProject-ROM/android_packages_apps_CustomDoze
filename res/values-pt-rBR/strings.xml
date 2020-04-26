@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ambient_display_title">Ambient Display</string>
+    <string name="doze_trigger_title">Quando mostrar</string>
+    <string name="doze_elements_title">O que mostrar</string>
+    <string name="gestures_title">Gestos</string>
+    <string name="brightness_title">Brilho</string>
+    <!-- Battery percentage -->
+    <string name="ambient_battery_percent_title">Nível da bateria</string>
+    <string name="ambient_battery_percent_summary">Mostrar porcentagem da bateria na parte inferior da tela</string>
+    <!-- Always on display -->
+    <string name="aod_setting_title">Sempre ativa</string>
+    <string name="aod_setting_summary">Mostrar hora, ícones de notificação e outras informações</string>
+    <!-- Always on while charging -->
+    <string name="doze_on_charge_title">Sempre ativa (durante o carregamento)</string>
+    <string name="doze_on_charge_summary">Sempre mostrar a tela ambiente enquanto o dispositivo estiver carregando</string>
+    <!-- Ambient display -->
+    <string name="ambient_display_notifications">Novas notificações</string>
+    <string name="ambient_display_summary">Ativar tela ao receber notificações</string>
+    <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">Ícone de música</string>
+    <string name="pulse_on_new_tracks_summary">Ativar a tela ao reproduzir uma nova faixa</string>
+    <!-- Tilt sensor -->
+    <string name="pick_up_title">Pegar</string>
+    <string name="pick_up_summary">Pegar seu telefone para verificar a hora, ícones de notificação e outras informações</string>
+    <!-- Proximity sensor -->
+    <string name="hand_wave_gesture_title">Acenar com a mão</string>
+    <string name="hand_wave_gesture_summary">Acene com a mão acima do seu telefone para conferir a hora, ícones de notificação e outras informações</string>
+    <string name="pocket_gesture_title">Bolso</string>
+    <string name="pocket_gesture_summary">Tire seu telefone do bolso para conferir a hora, ícones de notificação e outras informações</string>
+    <!-- Double tap -->
+    <string name="doze_double_tap_title">Toque duplo</string>
+    <string name="doze_double_tap_summary">Toque duas vezes em seu telefone para conferir a hora, ícones de notificação e outras informações</string>
+    <!-- Brightness -->
+    <string name="ambient_pulse_brightness_title">Ambient display</string>
+    <string name="ambient_doze_brightness_title">Tela sempre ativa</string>
+</resources>

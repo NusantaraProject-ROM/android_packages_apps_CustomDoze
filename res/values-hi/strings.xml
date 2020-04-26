@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ambient_display_title">एम्बिएंट डिस्प्ले</string>
+    <string name="doze_trigger_title">कब दिखाना है</string>
+    <string name="doze_elements_title">क्या दिखाना है</string>
+    <string name="gestures_title">इशारे</string>
+    <string name="brightness_title">चमक</string>
+    <!-- Battery percentage -->
+    <string name="ambient_battery_percent_title">बैटरी का स्तर</string>
+    <string name="ambient_battery_percent_summary">स्क्रीन के नीचे बैटरी प्रतिशत दिखाएं</string>
+    <!-- Always on display -->
+    <string name="aod_setting_title">हमेशा बने रहें</string>
+    <string name="aod_setting_summary">समय, अधिसूचना आइकन और अन्य जानकारी दिखाएं</string>
+    <!-- Always on while charging -->
+    <string name="doze_on_charge_title">हमेशा (चार्ज करते समय)</string>
+    <string name="doze_on_charge_summary">डिवाइस को चार्ज करते समय हमेशा परिवेश प्रदर्शन दिखाएं</string>
+    <!-- Ambient display -->
+    <string name="ambient_display_notifications">नई सूचनाएं</string>
+    <string name="ambient_display_summary">सूचनाएं प्राप्त होने पर स्क्रीन को जाग्रत करें</string>
+    <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">संगीत टिकर</string>
+    <string name="pulse_on_new_tracks_summary">नया गाना चलने पर स्क्रीन चालू करें</string>
+    <!-- Tilt sensor -->
+    <string name="pick_up_title">उठाएं</string>
+    <string name="pick_up_summary">समय, नोटिफिकेशन चिन्ह् एवं अन्य जानकारी के लिए फोन ऊपर उठाएं</string>
+    <!-- Proximity sensor -->
+    <string name="hand_wave_gesture_title">हाथ लहराएं</string>
+    <string name="hand_wave_gesture_summary">समय, नोटिफिकेशन चिन्ह् एवं अन्य जानकारी के लिए फोन के ऊपर हाथ लहराएं</string>
+    <string name="pocket_gesture_title">जेब से निकालें</string>
+    <string name="pocket_gesture_summary">समय, नोटिफिकेशन चिन्ह् एवं अन्य जानकारी के लिए फोन को जेब से निकालें</string>
+    <!-- Double tap -->
+    <string name="doze_double_tap_title">दो बार स्पर्श</string>
+    <string name="doze_double_tap_summary">समय, नोटिफिकेशन चिन्ह् एवं अन्य जानकारी के लिए स्क्रीन को दो बार स्पर्श करें</string>
+    <!-- Brightness -->
+    <string name="ambient_pulse_brightness_title">एम्बिएंट डिस्प्ले</string>
+    <string name="ambient_doze_brightness_title">स्क्रीन हमेशा चालू रखें</string>
+</resources>

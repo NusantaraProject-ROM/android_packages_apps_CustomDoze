@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ambient_display_title">Inaktivitätsdisplay</string>
+    <string name="doze_trigger_title">Wann anzeigen</string>
+    <string name="doze_elements_title">Was soll angezeigt werden</string>
+    <string name="gestures_title">Gesten</string>
+    <string name="brightness_title">Helligkeit</string>
+    <!-- Battery percentage -->
+    <string name="ambient_battery_percent_title">Akkustand</string>
+    <string name="ambient_battery_percent_summary">Zeige Akkuladung am unteren Bildschirmrand</string>
+    <!-- Always on display -->
+    <string name="aod_setting_title">Immer an</string>
+    <string name="aod_setting_summary">Uhrzeit, Benachrichtigungssymbole und andere Informationen anzeigen</string>
+    <!-- Always on while charging -->
+    <string name="doze_on_charge_title">Display aktiv lassen (beim Laden)</string>
+    <string name="doze_on_charge_summary">Beim Laden des Geräts immer das Inaktivitätsdisplay anzeigen</string>
+    <!-- Ambient display -->
+    <string name="ambient_display_notifications">Neue Benachrichtigungen</string>
+    <string name="ambient_display_summary">Bildschirm aktivieren, wenn Sie Benachrichtigungen erhalten</string>
+    <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">Musik-Ticker</string>
+    <string name="pulse_on_new_tracks_summary">Bildschirm aufwecken, wenn ein neuer Musiktitel abgespielt wird</string>
+    <!-- Tilt sensor -->
+    <string name="pick_up_title">Anheben</string>
+    <string name="pick_up_summary">Telefon anheben, um Zeit, Benachrichtigungen und weitere Informationen anzuzeigen</string>
+    <!-- Proximity sensor -->
+    <string name="hand_wave_gesture_title">Handgeste</string>
+    <string name="hand_wave_gesture_summary">Hand über Telefon streichen, um Zeit, Benachrichtigungen und weitere Informationen anzuzeigen</string>
+    <string name="pocket_gesture_title">Tasche</string>
+    <string name="pocket_gesture_summary">Telefon aus Hosentasche nehmen, um Zeit, Benachrichtigungen und weitere Informationen anzuzeigen</string>
+    <!-- Double tap -->
+    <string name="doze_double_tap_title">Doppeltippen</string>
+    <string name="doze_double_tap_summary">Doppeltippen auf Bildschirm, um Zeit, Benachrichtigungen und weitere Informationen anzuzeigen</string>
+    <!-- Brightness -->
+    <string name="ambient_pulse_brightness_title">Inaktivitätsdisplay</string>
+    <string name="ambient_doze_brightness_title">Always-on-Display</string>
+</resources>
