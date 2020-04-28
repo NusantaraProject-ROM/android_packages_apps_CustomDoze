@@ -210,12 +210,13 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
 
         private void setPrefs() {
             final boolean aodEnabled = Utils.isAoDEnabled(mContext);
+            final boolean aodChargeEnabled = Utils.isAoDChargeEnabled(mContext);
             mAmbientDisplayPreference.setEnabled(!aodEnabled);
             mPickUpPreference.setEnabled(!aodEnabled);
             mHandwavePreference.setEnabled(!aodEnabled);
             mPocketPreference.setEnabled(!aodEnabled);
             mDozeOnChargePreference.setEnabled(!aodEnabled);
-            mDozeBrightness.setEnabled(aodEnabled);
+            mDozeBrightness.setEnabled(aodEnabled || aodChargeEnabled);
             mPulseBrightness.setEnabled(!aodEnabled);
             mDoubleTapPreference.setEnabled(!aodEnabled);
             mMusicTickerPreference.setEnabled(!aodEnabled);
