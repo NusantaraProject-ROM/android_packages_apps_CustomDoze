@@ -75,6 +75,11 @@ public final class Utils {
                 Settings.Secure.DOZE_ALWAYS_ON, 0) != 0;
     }
 
+    protected static boolean isAoDChargeEnabled(Context context) {
+        return Settings.System.getInt(context.getContentResolver(),
+                Settings.System.DOZE_ON_CHARGE, 0) != 0;
+    }
+
     protected static boolean isAoDAvailable(Context context) {
         final AmbientDisplayConfiguration config = new AmbientDisplayConfiguration(context);
         return config.alwaysOnAvailable();
