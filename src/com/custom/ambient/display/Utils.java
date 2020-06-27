@@ -134,6 +134,12 @@ public final class Utils {
                 Settings.System.CUSTOM_AMBIENT_POCKETMODE_GESTURE, 0) != 0;
     }
 
+    protected static boolean enableAoDCharge(boolean enable, Context context) {
+        boolean enabled = Settings.System.putInt(context.getContentResolver(),
+                Settings.System.DOZE_ON_CHARGE, enable ? 1 : 0);
+        return enabled;
+    }
+
     protected static boolean enableDoze(boolean enable, Context context) {
         boolean enabled = Settings.Secure.putInt(context.getContentResolver(),
                 Settings.Secure.DOZE_ENABLED, enable ? 1 : 0);

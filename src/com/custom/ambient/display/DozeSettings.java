@@ -103,6 +103,8 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
             if (Utils.isAoDAvailable(mContext)) {
                 mAoDPreference.setChecked(Utils.isAoDEnabled(mContext));
                 mAoDPreference.setOnPreferenceChangeListener(this);
+                mDozeOnChargePreference.setChecked(Utils.isAoDChargeEnabled(mContext));
+                mDozeOnChargePreference.setOnPreferenceChangeListener(this);
             } else {
                 mAoDPreference.setVisible(false);
                 mDozeOnChargePreference.setVisible(false);
@@ -175,6 +177,12 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
                 boolean value = (Boolean) newValue;
                 mAoDPreference.setChecked(value);
                 Utils.enableAoD(value, mContext);
+                setPrefs();
+                return true;
+            } else if (Utils.AOD_CHARGE_KEY.equals(key)) {
+                boolean value = (Boolean) newValue;
+                mDozeOnChargePreference.setChecked(value);
+                Utils.enableAoDCharge(value, mContext);
                 setPrefs();
                 return true;
             } else if (Utils.AMBIENT_DISPLAY_KEY.equals(key)) {
