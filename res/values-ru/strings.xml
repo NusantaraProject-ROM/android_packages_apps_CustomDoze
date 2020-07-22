@@ -33,8 +33,10 @@
     <string name="pulse_on_new_tracks_title">Текущий трек</string>
     <string name="pulse_on_new_tracks_summary">Пробуждать экран при воспроизведении новой музыки</string>
     <!-- Tilt sensor -->
-    <string name="pick_up_title">Поднятие</string>
+    <string name="pick_up_title">Поднять для проверки уведомлений</string>
     <string name="pick_up_summary">Поднимите телефон, чтобы проверить время, значки уведомлений и другую информацию</string>
+    <string name="wake_gesture_title">Поднять для пробуждения</string>
+    <string name="wake_gesture_summary">Возьмите телефон для пробуждения устройства</string>
     <!-- Proximity sensor -->
     <string name="hand_wave_gesture_title">Взмах рукой</string>
     <string name="hand_wave_gesture_summary">Проведите рукой над телефоном для проверки времени, значков уведомлений и другой информации</string>
@@ -44,6 +46,8 @@
     <string name="doze_double_tap_title">Двойное касание</string>
     <string name="doze_double_tap_summary">Дважды коснитесь телефона для проверки времени, значков уведомлений и другой информации</string>
     <!-- Brightness -->
+    <string name="doze_brightness_force_title">Принудительные значения яркости</string>
+    <string name="doze_brightness_force_summary">Использовать пользовательские значения яркости вместо яркости экрана</string>
     <string name="ambient_pulse_brightness_title">Активный дисплей</string>
     <string name="ambient_doze_brightness_title">Дисплей всегда включен</string>
 </resources>

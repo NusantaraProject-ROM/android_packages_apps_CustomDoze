@@ -35,6 +35,8 @@
     <!-- Tilt sensor -->
     <string name="pick_up_title">Zvednutí</string>
     <string name="pick_up_summary">Zvednutím telefonu zkontrolujete čas, ikony oznámení a další informace</string>
+    <string name="wake_gesture_title">Zvednutím probudit</string>
+    <string name="wake_gesture_summary">Zvedněte telefon pro probuzení zařízení namísto pulzujících oznámení</string>
     <!-- Proximity sensor -->
     <string name="hand_wave_gesture_title">Mávnutí rukou</string>
     <string name="hand_wave_gesture_summary">Mávnutím ruky nad telefonem zkontrolujete čas, ikony oznámení a další informace</string>
@@ -44,6 +46,8 @@
     <string name="doze_double_tap_title">Dvojí klepnutí</string>
     <string name="doze_double_tap_summary">Dvojitým klepnutím na telefon zkontrolujete čas, ikony oznámení a další informace</string>
     <!-- Brightness -->
+    <string name="doze_brightness_force_title">Vynutit hodnoty jasu</string>
+    <string name="doze_brightness_force_summary">Použít vlastní hodnoty jasu namísto jasu obrazovky</string>
     <string name="ambient_pulse_brightness_title">Ambientní displej</string>
     <string name="ambient_doze_brightness_title">Trvale aktivní displej</string>
 </resources>

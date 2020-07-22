@@ -12,13 +12,38 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ambient_display_title">環境顯示</string>
+    <string name="doze_trigger_title">顯示時機</string>
+    <string name="doze_elements_title">要顯示的項目</string>
+    <string name="gestures_title">手勢</string>
+    <string name="brightness_title">亮度</string>
     <!-- Battery percentage -->
+    <string name="ambient_battery_percent_title">電池電量</string>
+    <string name="ambient_battery_percent_summary">休眠時，在螢幕底部顯示電池電量</string>
     <!-- Always on display -->
+    <string name="aod_setting_title">永遠開啟</string>
+    <string name="aod_setting_summary">顯示時間、通知圖示以及其他資訊</string>
     <!-- Always on while charging -->
+    <string name="doze_on_charge_title">永遠開啟(當充電時)</string>
+    <string name="doze_on_charge_summary">永遠顯示\"環境顯示\"在裝置充電時</string>
     <!-- Ambient display -->
+    <string name="ambient_display_notifications">新通知</string>
+    <string name="ambient_display_summary">當接收到通知時喚醒螢幕</string>
     <!-- Ambient music ticker -->
+    <string name="pulse_on_new_tracks_title">音樂提示訊息</string>
+    <string name="pulse_on_new_tracks_summary">當播放下一首曲目時喚醒螢幕</string>
     <!-- Tilt sensor -->
+    <string name="pick_up_title">抬起</string>
+    <string name="pick_up_summary">抬起你的裝置用以查看時間、通知以及其他資訊</string>
     <!-- Proximity sensor -->
+    <string name="hand_wave_gesture_title">揮手</string>
+    <string name="hand_wave_gesture_summary">揮動你的手用以查看時間、通知以及其他資訊</string>
+    <string name="pocket_gesture_title">口袋</string>
+    <string name="pocket_gesture_summary">從你的口袋中拿出手機用以查看時間、通知以及其他資訊</string>
     <!-- Double tap -->
+    <string name="doze_double_tap_title">雙擊</string>
+    <string name="doze_double_tap_summary">雙擊你的裝置用以查看時間、通知以及其他資訊</string>
     <!-- Brightness -->
+    <string name="ambient_pulse_brightness_title">環境顯示</string>
+    <string name="ambient_doze_brightness_title">一律顯示</string>
 </resources>

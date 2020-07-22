@@ -35,6 +35,8 @@
     <!-- Tilt sensor -->
     <string name="pick_up_title">Sollevamento</string>
     <string name="pick_up_summary">Prendi il telefono per controllare il tempo, le icone di notifica e altre informazioni</string>
+    <string name="wake_gesture_title">Alza per svegliare</string>
+    <string name="wake_gesture_summary">Prendi il telefono per risvegliare il dispositivo invece di ricevere notifiche pulsanti</string>
     <!-- Proximity sensor -->
     <string name="hand_wave_gesture_title">Movimento della mano</string>
     <string name="hand_wave_gesture_summary">Ondeggia la mano sopra il telefono per controllare il tempo, icone di notifica e altre informazioni</string>
@@ -44,6 +46,8 @@
     <string name="doze_double_tap_title">Doppio tocco</string>
     <string name="doze_double_tap_summary">Tocca due volte il telefono per controllare l\'ora, le icone di notifica e altre informazioni</string>
     <!-- Brightness -->
+    <string name="doze_brightness_force_title">Forza i valori di luminosità</string>
+    <string name="doze_brightness_force_summary">Usa valori di luminosità personalizzati invece della luminosità dello schermo</string>
     <string name="ambient_pulse_brightness_title">Ambient display</string>
     <string name="ambient_doze_brightness_title">Always on display</string>
 </resources>

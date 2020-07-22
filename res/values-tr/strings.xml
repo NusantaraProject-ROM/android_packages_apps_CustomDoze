@@ -12,7 +12,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="ambient_display_title">Ortam Ekranı</string>
+    <string name="ambient_display_title">Ortam ekranı</string>
     <string name="doze_trigger_title">Ne zaman gösterilirsin</string>
     <string name="doze_elements_title">Ne gösterilsin</string>
     <string name="gestures_title">Hareketler</string>
@@ -24,7 +24,7 @@
     <string name="aod_setting_title">Her zaman açık</string>
     <string name="aod_setting_summary">Saati, bildirim simgelerini ve diğer bilgileri göster</string>
     <!-- Always on while charging -->
-    <string name="doze_on_charge_title">Her zaman açık (Şarj olurken)</string>
+    <string name="doze_on_charge_title">Her zaman açık (şarj olurken)</string>
     <string name="doze_on_charge_summary">Cihaz şarj olurken daima ortam ekranını gösterir</string>
     <!-- Ambient display -->
     <string name="ambient_display_notifications">Yeni bildirim</string>
@@ -35,6 +35,8 @@
     <!-- Tilt sensor -->
     <string name="pick_up_title">Kaldır</string>
     <string name="pick_up_summary">Saati, bildirim simgelerini ve diğer bilgileri kontrol etmek için telefonunuzu alın</string>
+    <string name="wake_gesture_title">Kaldırınca uyandır</string>
+    <string name="wake_gesture_summary">Bildirimler yerine cihazı uyandırmak için telefonunuzu kaldırın</string>
     <!-- Proximity sensor -->
     <string name="hand_wave_gesture_title">El sallama</string>
     <string name="hand_wave_gesture_summary">Saati, bildirim simgelerini ve diğer bilgileri kontrol etmek için elinizi telefonunuzun üstünde sallayın</string>
@@ -44,6 +46,8 @@
     <string name="doze_double_tap_title">Çift dokunma</string>
     <string name="doze_double_tap_summary">Saati, bildirim simgelerini ve diğer bilgileri kontrol etmek için telefonunuzun ekranına iki kez dokunun</string>
     <!-- Brightness -->
+    <string name="doze_brightness_force_title">Parlaklık değerlerini zorla</string>
+    <string name="doze_brightness_force_summary">Ekran parlaklığı yerine özel parlaklık değerleri kullanın</string>
     <string name="ambient_pulse_brightness_title">Ortam ekranı</string>
     <string name="ambient_doze_brightness_title">Her zaman ekranda</string>
 </resources>
