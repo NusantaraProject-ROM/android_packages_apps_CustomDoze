@@ -14,7 +14,7 @@ LOCAL_PRIVATE_PLATFORM_APIS := true
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 include frameworks/base/packages/SettingsLib/common.mk
-include vendor/du/support/common.mk
+include vendor/nusantara/support/common.mk
 
 include $(BUILD_PACKAGE)
 
