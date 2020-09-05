@@ -96,14 +96,14 @@
         android:title="@string/brightness_title" >
 
         <com.dirtyunicorns.support.preferences.SystemSettingSeekBarPreference
-            android:key="ambient_doze_brightness"
+            android:key="doze_brightness"
             android:title="@string/ambient_doze_brightness_title"
             android:max="255"
             settings:min="1"
             android:persistent="false" />
 
         <com.dirtyunicorns.support.preferences.SystemSettingSeekBarPreference
-            android:key="ambient_pulse_brightness"
+            android:key="pulse_brightness"
             android:title="@string/ambient_pulse_brightness_title"
             android:max="255"
             settings:min="1"
