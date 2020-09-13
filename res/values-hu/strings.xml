@@ -35,6 +35,8 @@
     <!-- Tilt sensor -->
     <string name="pick_up_title">Kézbevétel</string>
     <string name="pick_up_summary">Vegye fel a telefont, hogy ellenőrizze az időt, az értesítési ikonokat és az egyéb információkat</string>
+    <string name="wake_gesture_title">Emelje fel, hogy felébredjen</string>
+    <string name="wake_gesture_summary">A pulzáló értesítések helyett vegye fel a telefont, hogy felébressze a készüléket</string>
     <!-- Proximity sensor -->
     <string name="hand_wave_gesture_title">Kézzel intés</string>
     <string name="hand_wave_gesture_summary">Húzza a kezét a telefon felett, hogy ellenőrizze az időt, az értesítési ikonokat és egyéb információkat</string>
@@ -44,6 +46,8 @@
     <string name="doze_double_tap_title">Dupla koppintás</string>
     <string name="doze_double_tap_summary">Koppintson duplán a telefonra az idő, az értesítési ikonok és egyéb információk ellenőrzéséhez</string>
     <!-- Brightness -->
+    <string name="doze_brightness_force_title">Kényszerítse a fényerő értékeit</string>
+    <string name="doze_brightness_force_summary">Használjon egyéni fényerő-értékeket a képernyő fényereje helyett</string>
     <string name="ambient_pulse_brightness_title">Környezeti kijelző</string>
     <string name="ambient_doze_brightness_title">Mindig bekapcsolva (Aod)</string>
 </resources>

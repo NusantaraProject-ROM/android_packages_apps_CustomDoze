@@ -35,6 +35,8 @@
     <!-- Tilt sensor -->
     <string name="pick_up_title">抬起</string>
     <string name="pick_up_summary">抬起你的裝置用以查看時間、通知以及其他資訊</string>
+    <string name="wake_gesture_title">拿起喚醒</string>
+    <string name="wake_gesture_summary">拿起你的手機喚醒裝置取代通知喚醒</string>
     <!-- Proximity sensor -->
     <string name="hand_wave_gesture_title">揮手</string>
     <string name="hand_wave_gesture_summary">揮動你的手用以查看時間、通知以及其他資訊</string>
@@ -44,6 +46,8 @@
     <string name="doze_double_tap_title">雙擊</string>
     <string name="doze_double_tap_summary">雙擊你的裝置用以查看時間、通知以及其他資訊</string>
     <!-- Brightness -->
+    <string name="doze_brightness_force_title">強制亮度值</string>
+    <string name="doze_brightness_force_summary">使用自訂的亮度值取代螢幕亮度</string>
     <string name="ambient_pulse_brightness_title">環境顯示</string>
     <string name="ambient_doze_brightness_title">一律顯示</string>
 </resources>
