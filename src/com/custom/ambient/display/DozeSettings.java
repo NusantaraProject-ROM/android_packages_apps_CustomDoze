@@ -27,6 +27,7 @@ import android.view.MenuItem;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
 
+import com.havoc.support.preferences.SecureSettingSwitchPreference;
 import com.havoc.support.preferences.SwitchPreference;
 import com.havoc.support.preferences.SystemSettingSeekBarPreference;
 import com.havoc.support.preferences.SystemSettingSwitchPreference;
@@ -71,7 +72,7 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
         private SwitchPreference mRaiseToWakePreference;
         private SwitchPreference mHandwavePreference;
         private SwitchPreference mPocketPreference;
-        private SystemSettingSwitchPreference mDozeOnChargePreference;
+        private SecureSettingSwitchPreference mDozeOnChargePreference;
         private SystemSettingSwitchPreference mDoubleTapPreference;
         private SystemSettingSwitchPreference mMusicTickerPreference;
         private SystemSettingSeekBarPreference mDozeBrightness;
@@ -92,7 +93,7 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
                 (SwitchPreference) findPreference(Utils.AOD_KEY);
 
             mDozeOnChargePreference =
-                (SystemSettingSwitchPreference) findPreference(Utils.AOD_CHARGE_KEY);
+                (SecureSettingSwitchPreference) findPreference(Utils.AOD_CHARGE_KEY);
 
             mDoubleTapPreference =
                 (SystemSettingSwitchPreference) findPreference(Utils.DOUBLE_TAP_KEY);
