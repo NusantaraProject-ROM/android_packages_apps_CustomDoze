@@ -1,0 +1,34 @@
+android_app {
+    name: "CustomDoze",
+
+    // Include SettingsLib and it's dependencies
+    defaults: ["SettingsLibDefaults"],
+
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+    static_libs: ["VendorSupport-preference"],
+
+    manifest: "AndroidManifest.xml",
+
+    system_ext_specific: true,
+    platform_apis: true,
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+    privileged: true,
+    required: [
+        "privapp_whitelist_com.custom.ambient.display",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_com.custom.ambient.display",
+    sub_dir: "permissions",
+    src: "privapp_whitelist_com.custom.ambient.display.xml",
+    filename_from_src: true,
+    system_ext_specific: true,
+}
