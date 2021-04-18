@@ -16,6 +16,7 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/ambient_display_title"
     xmlns:settings="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
@@ -33,11 +34,16 @@
         android:key="doze_trigger_key"
         android:title="@string/doze_trigger_title" >
 
-        <com.havoc.support.preferences.SwitchPreference
+        <com.havoc.support.preferences.SecureSettingMasterSwitchPreference
             android:key="always_on_ambient"
             android:defaultValue="false"
             android:title="@string/aod_setting_title"
-            android:summary="@string/aod_setting_summary" />
+            android:summary="@string/aod_setting_summary">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.custom.ambient.display"
+                android:targetClass="com.custom.ambient.display.AODSchedule" />
+        </com.havoc.support.preferences.SecureSettingMasterSwitchPreference>
 
         <com.havoc.support.preferences.SecureSettingSwitchPreference
             android:key="doze_on_charge"

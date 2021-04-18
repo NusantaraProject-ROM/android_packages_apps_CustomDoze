@@ -33,5 +33,11 @@
             android:label="@string/ambient_display_title"
             android:theme="@style/AppTheme">
         </activity>
+
+        <activity
+            android:name="com.custom.ambient.display.AODSchedule"
+            android:label="@string/ambient_doze_brightness_title"
+            android:theme="@style/AppTheme">
+        </activity>
     </application>
 </manifest>

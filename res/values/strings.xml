@@ -20,6 +20,10 @@
     <string name="gestures_title">Gestures</string>
     <string name="brightness_title">Brightness</string>
 
+    <!-- Switch On/Off  -->
+    <string name="switch_on_text">On</string>
+    <string name="switch_off_text">Off</string>
+
     <!-- Battery percentage -->
     <string name="ambient_battery_percent_title">Battery level</string> 
     <string name="ambient_battery_percent_summary">Show battery percent on the bottom of the screen</string>
@@ -27,6 +31,7 @@
     <!-- Always on display -->
     <string name="aod_setting_title">Always on</string>
     <string name="aod_setting_summary">Show time, notification icons and other info</string>
+    <string name="doze_always_on_text">Always on display let\'s you check the time, notification icons and other info when the device is locked. Increases battery usage.</string>
 
     <!-- Always on while charging -->
     <string name="doze_on_charge_title">Always on (While charging)</string>
@@ -61,4 +66,16 @@
     <string name="doze_brightness_force_summary">Use custom brightness values instead of screen brightness</string>
     <string name="ambient_pulse_brightness_title">Ambient display</string>
     <string name="ambient_doze_brightness_title">Always on display</string>
+
+    <!-- AOD Schedule -->
+    <string name="always_on_display_schedule_title">Schedule</string>
+    <string name="always_on_display_schedule_sunset">Sunset</string>
+    <string name="always_on_display_schedule_sunrise">Sunrise</string>
+    <string name="always_on_display_schedule_none">None</string>
+    <string name="always_on_display_schedule_twilight">Turns on from sunset to sunrise</string>
+    <string name="always_on_display_schedule_mixed_sunset">Turns on from sunset to a custom time</string>
+    <string name="always_on_display_schedule_mixed_sunrise">Turns on from a custom time to sunrise</string>
+    <string name="always_on_display_schedule_custom">Turns on at custom time</string>
+    <string name="always_on_display_start_time_title">Start time</string>
+    <string name="always_on_display_end_time_title">End time</string>
 </resources>
