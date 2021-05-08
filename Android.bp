@@ -6,7 +6,7 @@ android_app {
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
-    static_libs: ["VendorSupport-preference"],
+    static_libs: ["VendorSupportLib"],
 
     manifest: "AndroidManifest.xml",
 

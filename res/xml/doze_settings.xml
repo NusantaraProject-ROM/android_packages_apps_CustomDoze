@@ -23,7 +23,7 @@
         android:key="doze_elements"
         android:title="@string/doze_elements_title" >
 
-        <com.havoc.support.preferences.SystemSettingSwitchPreference
+        <com.nusantara.support.preferences.SystemSettingSwitchPreference
             android:key="ambient_battery_percent"
             android:title="@string/ambient_battery_percent_title"
             android:summary="@string/ambient_battery_percent_summary"
@@ -34,7 +34,7 @@
         android:key="doze_trigger_key"
         android:title="@string/doze_trigger_title" >
 
-        <com.havoc.support.preferences.SecureSettingMasterSwitchPreference
+        <com.nusantara.support.preferences.SecureSettingMasterSwitchPreference
             android:key="always_on_ambient"
             android:defaultValue="false"
             android:title="@string/aod_setting_title"
@@ -43,21 +43,21 @@
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="com.custom.ambient.display"
                 android:targetClass="com.custom.ambient.display.AODSchedule" />
-        </com.havoc.support.preferences.SecureSettingMasterSwitchPreference>
+        </com.nusantara.support.preferences.SecureSettingMasterSwitchPreference>
 
-        <com.havoc.support.preferences.SecureSettingSwitchPreference
+        <com.nusantara.support.preferences.SecureSettingSwitchPreference
             android:key="doze_on_charge"
             android:defaultValue="false"
             android:title="@string/doze_on_charge_title"
             android:summary="@string/doze_on_charge_summary" />
 
-        <com.havoc.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="ambient_display"
             android:defaultValue="true"
             android:title="@string/ambient_display_notifications"
             android:summary="@string/ambient_display_summary" />
 
-        <com.havoc.support.preferences.SystemSettingSwitchPreference
+        <com.nusantara.support.preferences.SystemSettingSwitchPreference
             android:key="pulse_on_new_tracks"
             android:defaultValue="true"
             android:title="@string/pulse_on_new_tracks_title"
@@ -68,32 +68,32 @@
         android:key="gestures"
         android:title="@string/gestures_title" >
 
-        <com.havoc.support.preferences.SystemSettingSwitchPreference
+        <com.nusantara.support.preferences.SystemSettingSwitchPreference
             android:key="doze_trigger_doubletap"
             android:defaultValue="false"
             android:title="@string/doze_double_tap_title"
             android:summary="@string/doze_double_tap_summary" />
 
-        <com.havoc.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="pick_up"
             android:defaultValue="false"
             android:title="@string/pick_up_title"
             android:summary="@string/pick_up_summary" />
 
-        <com.havoc.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="gesture_raise_to_wake"
             android:defaultValue="false"
             android:title="@string/wake_gesture_title"
             android:summary="@string/wake_gesture_summary"
             android:dependency="pick_up" />
 
-        <com.havoc.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="gesture_hand_wave"
             android:defaultValue="false"
             android:title="@string/hand_wave_gesture_title"
             android:summary="@string/hand_wave_gesture_summary" />
 
-        <com.havoc.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="gesture_pocket"
             android:defaultValue="false"
             android:title="@string/pocket_gesture_title"
@@ -104,21 +104,21 @@
         android:key="brightness"
         android:title="@string/brightness_title" >
 
-        <com.havoc.support.preferences.SystemSettingSeekBarPreference
+        <com.nusantara.support.preferences.SystemSettingSeekBarPreference
             android:key="ambient_doze_brightness"
             android:title="@string/ambient_doze_brightness_title"
             android:max="255"
             settings:min="1"
             android:persistent="false" />
 
-        <com.havoc.support.preferences.SystemSettingSeekBarPreference
+        <com.nusantara.support.preferences.SystemSettingSeekBarPreference
             android:key="ambient_pulse_brightness"
             android:title="@string/ambient_pulse_brightness_title"
             android:max="255"
             settings:min="1"
             android:persistent="false" />
 
-        <com.havoc.support.preferences.SystemSettingSwitchPreference
+        <com.nusantara.support.preferences.SystemSettingSwitchPreference
             android:key="doze_brightness_force"
             android:title="@string/doze_brightness_force_title"
             android:summary="@string/doze_brightness_force_summary"
