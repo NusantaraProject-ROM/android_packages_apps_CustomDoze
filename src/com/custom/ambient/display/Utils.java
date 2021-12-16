@@ -43,9 +43,6 @@ public final class Utils {
     protected static final String GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
     protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
     protected static final String DOUBLE_TAP_KEY = "doze_trigger_doubletap";
-    protected static final String MUSIC_TICKER_KEY = "pulse_on_new_tracks";
-    protected static final String DOZE_BRIGHTNESS_KEY = "ambient_doze_brightness";
-    protected static final String PULSE_BRIGHTNESS_KEY = "ambient_pulse_brightness";
 
     protected static void startService(Context context) {
         if (DEBUG) Log.d(TAG, "Starting service");
@@ -77,8 +74,8 @@ public final class Utils {
     }
 
     protected static boolean isAoDChargeEnabled(Context context) {
-        return Settings.Secure.getInt(context.getContentResolver(),
-                Settings.Secure.DOZE_ON_CHARGE, 0) != 0;
+        return Settings.System.getInt(context.getContentResolver(),
+                Settings.System.DOZE_ON_CHARGE, 0) != 0;
     }
 
     protected static boolean isAoDAvailable(Context context) {
@@ -135,8 +132,8 @@ public final class Utils {
     }
 
     protected static boolean enableAoDCharge(boolean enable, Context context) {
-        boolean enabled = Settings.Secure.putInt(context.getContentResolver(),
-                Settings.Secure.DOZE_ON_CHARGE, enable ? 1 : 0);
+        boolean enabled = Settings.System.putInt(context.getContentResolver(),
+                Settings.System.DOZE_ON_CHARGE, enable ? 1 : 0);
         return enabled;
     }
 

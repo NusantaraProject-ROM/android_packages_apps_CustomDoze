@@ -18,15 +18,6 @@
     <string name="doze_trigger_title">When to show</string>
     <string name="doze_elements_title">What to show</string>
     <string name="gestures_title">Gestures</string>
-    <string name="brightness_title">Brightness</string>
-
-    <!-- Switch On/Off  -->
-    <string name="switch_on_text">On</string>
-    <string name="switch_off_text">Off</string>
-
-    <!-- Battery percentage -->
-    <string name="ambient_battery_percent_title">Battery level</string> 
-    <string name="ambient_battery_percent_summary">Show battery percent on the bottom of the screen</string>
 
     <!-- Always on display -->
     <string name="aod_setting_title">Always on</string>
@@ -40,10 +31,6 @@
     <!-- Ambient display -->
     <string name="ambient_display_notifications">New notifications</string>
     <string name="ambient_display_summary">Wake screen when you receive notifications</string>
-
-    <!-- Ambient music ticker -->
-    <string name="pulse_on_new_tracks_title">Music ticker</string>
-    <string name="pulse_on_new_tracks_summary">Wake screen when a new music track is played</string>
 
     <!-- Tilt sensor -->
     <string name="pick_up_title">Pick up</string>
@@ -60,12 +47,6 @@
     <!-- Double tap -->
     <string name="doze_double_tap_title">Double tap</string>
     <string name="doze_double_tap_summary">Double tap your phone to check time, notification icons and other info</string>
-
-    <!-- Brightness -->
-    <string name="doze_brightness_force_title">Force brightness values</string>
-    <string name="doze_brightness_force_summary">Use custom brightness values instead of screen brightness</string>
-    <string name="ambient_pulse_brightness_title">Ambient display</string>
-    <string name="ambient_doze_brightness_title">Always on display</string>
 
     <!-- AOD Schedule -->
     <string name="always_on_display_schedule_title">Schedule</string>

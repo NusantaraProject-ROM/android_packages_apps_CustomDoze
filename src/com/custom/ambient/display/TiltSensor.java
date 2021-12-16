@@ -86,11 +86,11 @@ public class TiltSensor implements SensorEventListener {
         if (DEBUG) Log.d(TAG, "Got sensor event: " + event.values[0]);
 
         long delta = SystemClock.elapsedRealtime() - mEntryTimestamp;
-        if (delta < MIN_PULSE_INTERVAL_MS) {
+        if (delta < (isRaiseToWake ? MIN_WAKEUP_INTERVAL_MS : MIN_PULSE_INTERVAL_MS)) {
             return;
-        } else {
-            mEntryTimestamp = SystemClock.elapsedRealtime();
         }
+
+        mEntryTimestamp = SystemClock.elapsedRealtime();
 
         if (event.values[0] == 1) {
             if (isRaiseToWake) {

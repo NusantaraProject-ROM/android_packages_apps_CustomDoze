@@ -31,13 +31,15 @@
         <activity
             android:name=".DozeSettings"
             android:label="@string/ambient_display_title"
-            android:theme="@style/AppTheme">
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase">
         </activity>
 
         <activity
             android:name="com.custom.ambient.display.AODSchedule"
-            android:label="@string/ambient_doze_brightness_title"
-            android:theme="@style/AppTheme">
+            android:label="@string/ambient_display_title"
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase">
         </activity>
     </application>
 </manifest>

@@ -16,23 +16,16 @@
 
 package com.custom.ambient.display;
 
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.TimePickerDialog;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.preference.PreferenceActivity;
 import android.provider.Settings;
 import android.text.format.DateFormat;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.CompoundButton;
 import android.widget.Switch;
-import android.widget.TextView;
 import android.widget.TimePicker;
 
 import androidx.preference.DropDownPreference;
@@ -42,7 +35,13 @@ import androidx.preference.PreferenceFragment;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalTime;
 
-public class AODSchedule extends PreferenceActivity implements PreferenceFragment.OnPreferenceStartFragmentCallback {
+import com.android.settingslib.widget.MainSwitchPreference;
+import com.android.settingslib.widget.OnMainSwitchChangeListener;
+
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
+
+public class AODSchedule extends CollapsingToolbarBaseActivity implements PreferenceFragment.OnPreferenceStartFragmentCallback {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +49,7 @@ public class AODSchedule extends PreferenceActivity implements PreferenceFragmen
 
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, getNewFragment())
+                    .replace(R.id.content_frame, getNewFragment())
                     .commit();
         }
     }
@@ -65,14 +64,14 @@ public class AODSchedule extends PreferenceActivity implements PreferenceFragmen
         Fragment instantiate = Fragment.instantiate(this, preference.getFragment(),
             preference.getExtras());
         getFragmentManager().beginTransaction().replace(
-                android.R.id.content, instantiate).addToBackStack(preference.getKey()).commit();
+                R.id.content_frame, instantiate).addToBackStack(preference.getKey()).commit();
 
         return true;
     }
 
     public static class MainSettingsFragment extends PreferenceFragment implements
             Preference.OnPreferenceClickListener, Preference.OnPreferenceChangeListener,
-            CompoundButton.OnCheckedChangeListener {
+            OnMainSwitchChangeListener {
 
         static final int MODE_DISABLED = 0;
         static final int MODE_NIGHT = 1;
@@ -85,14 +84,12 @@ public class AODSchedule extends PreferenceActivity implements PreferenceFragmen
         private static final String TILL_PREF_KEY = "doze_always_on_auto_till";
 
         private Context mContext;
-        private ActionBar actionBar;
 
         private DropDownPreference mModePref;
         private Preference mSincePref;
         private Preference mTillPref;
 
-        private TextView mTextView;
-        private View mSwitchBar;
+        private MainSwitchPreference mSwitchBar;
 
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -101,9 +98,11 @@ public class AODSchedule extends PreferenceActivity implements PreferenceFragmen
 
             mContext = getActivity();
 
-            actionBar = getActivity().getActionBar();
-            assert actionBar != null;
-            actionBar.setDisplayHomeAsUpEnabled(true);
+            boolean enabled = Utils.isAoDEnabled(mContext);
+
+            mSwitchBar = (MainSwitchPreference) findPreference(Utils.AOD_KEY);
+            mSwitchBar.addOnSwitchChangeListener(this);
+            mSwitchBar.setChecked(enabled);
 
             ContentResolver resolver = getActivity().getContentResolver();
 
@@ -124,44 +123,9 @@ public class AODSchedule extends PreferenceActivity implements PreferenceFragmen
         }
 
         @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                Bundle savedInstanceState) {
-            final View view = LayoutInflater.from(getContext()).inflate(R.layout.master_setting_switch, container, false);
-            ((ViewGroup) view).addView(super.onCreateView(inflater, container, savedInstanceState));
-            return view;
-        }
-
-        @Override
-        public void onViewCreated(View view, Bundle savedInstanceState) {
-            super.onViewCreated(view, savedInstanceState);
-
-            boolean enabled = Utils.isAoDEnabled(mContext);
-
-            mTextView = view.findViewById(R.id.switch_text);
-            mTextView.setText(getString(enabled ?
-                    R.string.switch_on_text : R.string.switch_off_text));
-
-            mSwitchBar = view.findViewById(R.id.switch_bar);
-            Switch switchWidget = mSwitchBar.findViewById(android.R.id.switch_widget);
-            switchWidget.setChecked(enabled);
-            switchWidget.setOnCheckedChangeListener(this);
-            mSwitchBar.setActivated(enabled);
-            mSwitchBar.setOnClickListener(v -> {
-                switchWidget.setChecked(!switchWidget.isChecked());
-                mSwitchBar.setActivated(switchWidget.isChecked());
-            });
-
-            mModePref.setEnabled(enabled);
-            mSincePref.setEnabled(enabled);
-            mTillPref.setEnabled(enabled);
-        }
-
-        @Override
-        public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+        public void onSwitchChanged(Switch switchView, boolean isChecked) {
+            mSwitchBar.setChecked(isChecked);
             Utils.enableAoD(isChecked, mContext);
-            mTextView.setText(getString(isChecked ? R.string.switch_on_text : R.string.switch_off_text));
-            mSwitchBar.setActivated(isChecked);
-
             mModePref.setEnabled(isChecked);
             mSincePref.setEnabled(isChecked);
             mTillPref.setEnabled(isChecked);
@@ -278,15 +242,5 @@ public class AODSchedule extends PreferenceActivity implements PreferenceFragmen
         public void onDestroy() {
             super.onDestroy();
         }
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                onBackPressed();
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 }

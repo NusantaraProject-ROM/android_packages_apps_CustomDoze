@@ -18,31 +18,5 @@
 -->
 
 <resources>
-    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault.Settings">
-        <item name="preferenceTheme">@style/PreferenceTheme</item>
-    </style>
-
-    <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.SettingsBase">
-        <item name="preferenceCategoryTitleTextAppearance">@style/TextAppearance.CategoryTitle</item>
-    </style>
-
-    <style name="TextAppearance.CategoryTitle" parent="@*android:style/TextAppearance.DeviceDefault.Body2">
-        <item name="android:textAllCaps">true</item>
-        <item name="android:textSize">11sp</item>
-        <!-- 0.8 Spacing, 0.8/11 = 0.072727273 -->
-        <item name="android:letterSpacing">0.072727273</item>
-    </style>
-
-    <style name="TextAppearance.Switch"
-           parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
-        <item name="android:textSize">16sp</item>
-    </style>
-
-    <style name="Theme.Main.SwitchBar" parent="@android:style/ThemeOverlay.Material.ActionBar">
-    </style>
-
-    <style name="Theme.Main.SwitchBar.Switch">
-        <item name="android:trackTint">@color/switchbar_switch_track_tint</item>
-        <item name="android:thumbTint">@color/switchbar_switch_thumb_tint</item>
-    </style>
+    <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.Material.Medium" />
 </resources>

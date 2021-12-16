@@ -20,17 +20,6 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
-        android:key="doze_elements"
-        android:title="@string/doze_elements_title" >
-
-        <com.nusantara.support.preferences.SystemSettingSwitchPreference
-            android:key="ambient_battery_percent"
-            android:title="@string/ambient_battery_percent_title"
-            android:summary="@string/ambient_battery_percent_summary"
-            android:defaultValue="true" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="doze_trigger_key"
         android:title="@string/doze_trigger_title" >
 
@@ -45,7 +34,7 @@
                 android:targetClass="com.custom.ambient.display.AODSchedule" />
         </com.nusantara.support.preferences.SecureSettingMasterSwitchPreference>
 
-        <com.nusantara.support.preferences.SecureSettingSwitchPreference
+        <com.nusantara.support.preferences.SystemSettingSwitchPreference
             android:key="doze_on_charge"
             android:defaultValue="false"
             android:title="@string/doze_on_charge_title"
@@ -57,11 +46,6 @@
             android:title="@string/ambient_display_notifications"
             android:summary="@string/ambient_display_summary" />
 
-        <com.nusantara.support.preferences.SystemSettingSwitchPreference
-            android:key="pulse_on_new_tracks"
-            android:defaultValue="true"
-            android:title="@string/pulse_on_new_tracks_title"
-            android:summary="@string/pulse_on_new_tracks_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -98,30 +82,5 @@
             android:defaultValue="false"
             android:title="@string/pocket_gesture_title"
             android:summary="@string/pocket_gesture_summary" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="brightness"
-        android:title="@string/brightness_title" >
-
-        <com.nusantara.support.preferences.SystemSettingSeekBarPreference
-            android:key="ambient_doze_brightness"
-            android:title="@string/ambient_doze_brightness_title"
-            android:max="255"
-            settings:min="1"
-            android:persistent="false" />
-
-        <com.nusantara.support.preferences.SystemSettingSeekBarPreference
-            android:key="ambient_pulse_brightness"
-            android:title="@string/ambient_pulse_brightness_title"
-            android:max="255"
-            settings:min="1"
-            android:persistent="false" />
-
-        <com.nusantara.support.preferences.SystemSettingSwitchPreference
-            android:key="doze_brightness_force"
-            android:title="@string/doze_brightness_force_title"
-            android:summary="@string/doze_brightness_force_summary"
-            android:defaultValue="false" />
     </PreferenceCategory>
 </PreferenceScreen>
